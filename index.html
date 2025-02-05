@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神奇小猫 🐱</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🐱 神奇小猫 🐱</h1>
+    <p id="clickCount">点击次数: 0</p>
+    <button id="spawnCat">点击我生成小猫 🐱</button>
+    <button id="musicToggle">🎵</button>
+
+    <!-- 🎵 音乐播放器 -->
+    <div id="musicPanel" class="hidden">
+        <input type="text" id="musicURL" placeholder="输入 YouTube 音乐链接">
+        <button onclick="playYouTube()">播放</button>
+        <iframe id="youtubePlayer" style="display:none;" frameborder="0" allow="autoplay"></iframe>
+    </div>
+
+    <!-- 消息框 -->
+    <div id="messageBox"></div>
+
+    <!-- 水印 -->
+    <div id="watermark">edit by: 念夏子</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

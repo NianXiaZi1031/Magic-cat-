@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    overflow: hidden; /* 防止页面滚动 */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ffcc00;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff9900;
+}
+
+/* 🎵 音乐播放器 */
+#musicPanel {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+/* 🐱 猫咪样式 */
+.cat {
+    position: absolute;
+    font-size: 30px; /* 控制猫的大小 */
+    user-select: none;
+    pointer-events: none;
+    transition: transform 0.5s ease-in-out; /* 让猫咪平滑移动 */
+}
+
+/* 🚀 消息框 */
+#messageBox {
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* 🌊 水印 */
+#watermark {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    pointer-events: none;
+}
